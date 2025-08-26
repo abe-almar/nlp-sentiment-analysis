@@ -1,11 +1,26 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+
+# CI
+.codeclimate.yml
+.travis.yml
+.taskcluster.yml
+
+# Docker
+docker-compose.yml
+Dockerfile
+.docker
+.dockerignore
+
 # Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+**/__pycache__/
+**/*.py[cod]
 
 # C extensions
 *.so
-# pptx files
-*.pptx
 
 # Distribution / packaging
 .Python
@@ -15,7 +30,6 @@ develop-eggs/
 dist/
 downloads/
 eggs/
-.eggs/
 lib/
 lib64/
 parts/
@@ -39,11 +53,9 @@ pip-delete-this-directory.txt
 htmlcov/
 .tox/
 .coverage
-.coverage.*
 .cache
 nosetests.xml
 coverage.xml
-*.cover
 
 # Translations
 *.mo
@@ -58,48 +70,24 @@ docs/_build/
 # PyBuilder
 target/
 
-# DotEnv configuration
+# Virtual environment
 .env
+.venv/
+venv/
 
-# Database
-*.db
-*.rdb
-
-# Pycharm
+# PyCharm
 .idea
+
+# Python mode for VIM
+.ropeproject
+**/.ropeproject
+
+# Vim swap files
+**/*.swp
+
+#data folder
+/data/
+/__pycache__/
 
 # VS Code
 .vscode/
-*.code-workspace
-
-# Spyder
-.spyproject/
-
-# Jupyter NB Checkpoints
-.ipynb_checkpoints/
-
-# Mac OS-specific storage files
-.DS_Store
-
-# vim
-*.swp
-*.swo
-
-# Mypy cache
-.mypy_cache/
-
-# Exclude virtual environment
-.venv/
-data/
-
-#MLFLow
-mlruns/
-mlartifacts/
-
-# Exclude trained models
-/models/
-*.keras
-*.pkl
-
-# exclude data from source control by default
-# /data/
